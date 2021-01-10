@@ -1,0 +1,95 @@
+/* hamburger menu icon */
+
+.menu_responsive-hide {
+	transition: 0.5s;
+	opacity: 0;
+  	transform: translateY(-60px);
+}
+
+.menu_responsive-show {
+	transition: 0.5s;
+  	top: 0px;
+}
+
+.hamburger_div {
+  z-index: 99;
+  background-color: rgba(37,65,70,0.9);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  /* text-align: center; */
+  height: 60px;
+}
+
+.hamburger_logo {
+  width: 120px;
+  margin-left: 18px;
+}
+
+.hamburger {
+  display: block;
+  top: 15px;
+  right: 20px;
+  position: absolute;
+}
+
+.hamburger_icon {
+  width: 27px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Hamburger icons animation */
+
+.hamburger_icon_one {
+  transform-origin: center center;
+  transform: rotate(45deg) translateY(5px) translateX(5px);
+}
+
+.hamburger_icon_two {
+  width: 0px;
+}
+
+.hamburger_icon_three {
+  transform-origin: center center;
+  transform: rotate(-45deg) translateY(-5px) translateX(5px);
+}
+
+/* menu hidden */
+
+.menu {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  background-color: rgba(37,65,70,0.9);
+  height: calc(var(--vh, 1vh) * 100);
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vh;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: translateX(60vw);
+  transition: 0.4s;
+}
+
+/* menu show */
+
+.menu_show {
+  transform: translateX(0vw);
+}
+
+.menu a {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 25px 0 0 10%;
+}
+
+
+.ig_menu {
+  width: 30px;
+}
