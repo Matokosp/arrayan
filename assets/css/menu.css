@@ -93,3 +93,39 @@
 .ig_menu {
   width: 30px;
 }
+
+@media screen and (min-width: 1000px) {
+
+  .hamburger_div {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 3vw 0 0;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateX(0);
+    transition: 0.4s;
+  }
+
+  .menu a {
+    color: rgb(37,65,70);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 0 0 0 20px;
+  }
+
+  .menu a .yellow-span {
+    display: none;
+  }
+
+}

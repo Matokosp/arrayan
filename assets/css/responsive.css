@@ -1,0 +1,226 @@
+/* media query for tablets */
+
+@media screen and (min-width: 768px) {
+
+    section {
+        padding: 60px 10vw;
+    }
+
+    .section-title-container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .section-title-container h3 {
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .section-title {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .section-title span {
+        margin-bottom: 8px;
+    }
+
+    .section-title h2 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    
+    /* HERO */
+
+    .hero h2 {
+        margin: 0;
+    }
+
+    /* SECTION TWO */
+
+    .section-two {
+        /* text-align: center; */
+    }
+
+    .section-two-flexbox {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .section-two-flexbox div {
+        width: 30%;
+    }
+
+    /* SECTION THREE */
+
+    .section-three {
+        text-align: left;
+        padding: 100px 10vw;
+    }
+
+    .section-three-text {
+        width: 70%;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .section-three p {
+        padding-left: 55px;
+    }
+
+    /* SECTION FOUR */
+
+    .staff-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .staff-item {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        padding: 100px 10vh 120px 10vh;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 32%;
+    }
+
+}
+
+/* media query for laptop & desktops */
+
+@media screen and (min-width: 1000px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 100px 15vw;
+    }
+
+    .section-title-container h3 {
+        font-weight: 600;
+        line-height: 1.7rem;
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    .section-title h2 {
+       font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 0 15vw;
+    }
+
+    .hero h2 {
+        font-size: 2.4rem;
+    }
+
+    /* SECTION TWO */
+
+    .section-two {
+        display: block;
+        padding: 150px 15vw;
+    }
+
+    .section-two .container {
+        
+    }
+
+    .section-two-flexbox div img {
+        width: 90px;
+    }
+
+    .service-container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 1 1;
+    }
+
+    .service-item {
+        width: 30%;
+        align-self: stretch;
+    }
+
+    /* SECTION THREE */
+
+    .section-three {
+        padding: 120px 15vw;
+    }
+
+    .section-three-text {
+        width: 50%;
+    }
+
+    .section-three p {
+        font-size: 1rem;
+    }
+
+    /* SECTION FOUR */
+
+    .staff-item {
+        width: 30%;
+    }
+
+    .staff-plus {
+        display: none;
+    }
+
+    .staff-item-info-corner span {
+        display: none;
+    }
+
+    /* SECTION FIVE */
+
+    .section-five {
+        padding: 100px 10vw;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        padding: 20vh 20vw 30vh 20vw;
+    }
+
+}
+
+/* media query for laptop & desktops */
+
+@media screen and (min-width: 1440px) {
+
+    .section-three {
+        padding: 180px 15vw;
+    }
+
+    .section-four {
+        padding: 140px 15vw;
+    }
+
+    .section-five {
+        padding: 200px 15vw;
+    }
+
+    .contact .container {
+        max-width: 800px;
+    }
+
+}

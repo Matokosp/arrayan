@@ -75,3 +75,29 @@ $(infoHide).on('click', function(){
     $(this).parents('.staff-item-info').siblings('.staff-item-bott').show();
 });
 
+
+
+
+// DESKTOPS
+
+  // ---------------------------------
+
+
+	var x = window.matchMedia("(min-width: 1000px)")
+
+	function myFunction(x) {
+	  if (x.matches) { // If media query matches
+
+      $('.staff-item').on('mouseenter', function(){
+        $(this).children('.staff-item-info').addClass('staff-info-show');
+      })
+      $('.staff-item').on('mouseleave', function(){
+        $(this).children('.staff-item-info').removeClass('staff-info-show');
+      })
+       
+	  }
+	}
+
+	myFunction(x) // Call listener function at run time
+	x.addListener(myFunction) // Attach listener function on state changes
+
