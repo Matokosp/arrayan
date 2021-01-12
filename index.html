@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="assets/css/menu.css">
 </head>
 <body>
-    <!-- <div class="laptop_menu_logo_div laptop">
-        <img class="laptop_menu_logo laptop_menu_logo-white" src="assets/images/xtreme_logo_white.png" alt="">
-        <img class="laptop_menu_logo laptop_menu_logo-color" src="assets/images/xtreme_logo.png" alt="">
-    </div> -->
+    <div class="laptop-logo">
+        <img class="laptop_menu_logo laptop_menu_logo-white" src="assets/images/arrayan-logo.png" alt="">
+        <img class="laptop_menu_logo laptop_menu_logo-color" src="assets/images/arrayan-logo-green.png" alt="">
+    </div>
     <div class="hamburger_div">
         <img class="hamburger_logo" src="assets/images/arrayan-logo.png" alt="Xtreme Boost">
         <ul class="hamburger" id="navButton">
@@ -27,10 +27,10 @@
         </ul>
     </div>
     <nav class="menu" id="menu">
-        <a href="index.html"><span class="yellow-span"></span>Inicio</a>
-        <a href="contacto.html"><span class="yellow-span"></span>Quiénes somos</a>
-        <a href="contacto.html"><span class="yellow-span"></span>Servicios</a>
-        <a href="contacto.html"><span class="yellow-span"></span>Contacto</a>
+        <a class="menu-a" href="index.html"><span class="yellow-span"></span>Inicio</a>
+        <a class="menu-a" href="contacto.html"><span class="yellow-span"></span>Quiénes somos</a>
+        <a class="menu-a" href="contacto.html"><span class="yellow-span"></span>Servicios</a>
+        <a class="menu-a" href="contacto.html"><span class="yellow-span"></span>Contacto</a>
     </nav>
     <section class="hero bkg-img" id="sectionOne">
         <div class="container">
@@ -59,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="section-three bkg-img" id="sectionThree">
+    <section data-parallax="scroll" data-image-src="assets/images/section-three-bkg.jpg" class="section-three bkg-img" id="sectionThree">
         <div class="container">
             <div class="section-three-text">
                 <div class="section-title">
@@ -89,9 +89,12 @@
                         </div>                  
                     </div>
                     <div class="staff-item-info">
-                        <h4>Vicente Taladriz <span>- Cargo</span></h4>
-                        <p>Vicente se desempeña como Analista de Inversiones del fondo Arrayán Acciones Chilenas. 
-                            Es Ingeniero Comercial de la Universidad de Los Andes.</p>
+                        <h4>Enrique Taladriz <span>- Cargo</span></h4>
+                        <p>
+                            Enrique es director de la Administradora de Arrayan Asset. Cuenta con más de 20 años de experiencia en el sistema financiero. Actualmente se desempeña como Gerente de Inversiones del family office de la familia Hiller. Previamente se desempeñó como Gerente Corporativo de Planificación Estratégica y Desarrollo de Ripley Corp a cargo de las áreas de desarrollo de negocios, inversiones, control de gestión y planificación estratégica de todos los negocios del holding para Chile y Perú. Trabajó 8 años en Moneda Asset Management como Gerente de Estudios, analizando diversas clases de activos tales como equity, deuda y private equity en distintos mercados de América Latina. Inicia su carrera en 1996 en el área de negocios corporativos de CorpGroup, participando en diversos procesos de M&A en el sistema financiero latinoamericano.
+                            
+                            Enrique es Ingeniero Comercial y Magíster en Economía de la Pontificia Universidad Católica de Chile y MBA de la Universidad de Cambridge, donde estudió becado por el British Council y The Cambridge Fundation.
+                            </p>
                         <div class="staff-item-info-corner" href="">
                             <a href=""><img src="assets/images/linkedin.png" alt=""></a>                        
                             <span class="yellow-span staff-info-hide"></span>
@@ -99,10 +102,10 @@
                     </div>    
                 </div>
                 <div class="staff-item">
-                    <img class="staff-profile-image" src="assets/images/enrique.jpg" alt="">
+                    <img class="staff-profile-image" src="assets/images/alvaro.jpg" alt="">
                     <div class="staff-item-bott">
                         <div>
-                            <h4>Enrique Taladriz</h4>
+                            <h4>Álvaro Pipino</h4>
                             <p>Cargo</p>
                         </div>
                         <div class="staff-plus">
@@ -120,10 +123,10 @@
                     </div>    
                 </div>
                 <div class="staff-item">
-                    <img class="staff-profile-image" src="assets/images/enrique.jpg" alt="">
+                    <img class="staff-profile-image" src="assets/images/juan.jpg" alt="">
                     <div class="staff-item-bott">
                         <div>
-                            <h4>Enrique Taladriz</h4>
+                            <h4>Juan Antonio Yañez</h4>
                             <p>Cargo</p>
                         </div>
                         <div class="staff-plus">
@@ -140,10 +143,53 @@
                         </div>                    
                     </div>    
                 </div>
+                <div class="staff-item">
+                    <img class="staff-profile-image" src="assets/images/jose.jpg" alt="">
+                    <div class="staff-item-bott">
+                        <div>
+                            <h4>José Andrés Navarro</h4>
+                            <p>Cargo</p>
+                        </div>
+                        <div class="staff-plus">
+                            <img src="assets/images/plus-icon.png" alt="">
+                        </div>                  
+                    </div>
+                    <div class="staff-item-info">
+                        <h4>Vicente Taladriz <span>- Cargo</span></h4>
+                        <p>Vicente se desempeña como Analista de Inversiones del fondo Arrayán Acciones Chilenas. 
+                            Es Ingeniero Comercial de la Universidad de Los Andes.</p>
+                        <div class="staff-item-info-corner" href="">
+                            <a href=""><img src="assets/images/linkedin.png" alt=""></a>                        
+                            <span class="yellow-span staff-info-hide"></span>
+                        </div>                    
+                    </div>    
+                </div>
+                <div class="staff-item">
+                    <img class="staff-profile-image" src="assets/images/vicente.jpg" alt="">
+                    <div class="staff-item-bott">
+                        <div>
+                            <h4>Vicente Valdés</h4>
+                            <p>Cargo</p>
+                        </div>
+                        <div class="staff-plus">
+                            <img src="assets/images/plus-icon.png" alt="">
+                        </div>                  
+                    </div>
+                    <div class="staff-item-info">
+                        <h4>Vicente Taladriz <span>- Cargo</span></h4>
+                        <p>Vicente se desempeña como Analista de Inversiones del fondo Arrayán Acciones Chilenas. 
+                            Es Ingeniero Comercial de la Universidad de Los Andes.</p>
+                        <div class="staff-item-info-corner" href="">
+                            <a href=""><img src="assets/images/linkedin.png" alt=""></a>                        
+                            <span class="yellow-span staff-info-hide"></span>
+                        </div>                    
+                    </div>    
+                </div>
+                <div class="staff-item"></div>
             </div>
         </div>
     </section>
-    <section class="section-five bkg-img" id="sectionFive">
+    <section data-parallax="scroll" data-image-src="assets/images/section-three-bkg.jpg" class="section-five bkg-img" id="sectionFive">
         <div class="container">
             <div class="section-title">
                 <span class="yellow-span"></span>
@@ -200,6 +246,8 @@
 			  src="https://code.jquery.com/jquery-3.5.1.js"
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
               crossorigin="anonymous"></script>
+    <script src="assets/js/parallax.js"></script>
     <script src="assets/js/myscript.js"></script>
+    
 </body>
 </html>

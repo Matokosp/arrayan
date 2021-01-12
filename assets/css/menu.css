@@ -82,7 +82,7 @@
   transform: translateX(0vw);
 }
 
-.menu a {
+.menu-a {
   color: #fff;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -92,6 +92,10 @@
 
 .ig_menu {
   width: 30px;
+}
+
+.laptop-logo {
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -105,8 +109,8 @@
     z-index: 50;
     top: 0;
     right: 0;
-    background-color: #fff;
-    height: 60px;
+    color: rgba(37,65,70,0.9);
+    height: 80px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -117,14 +121,35 @@
     transition: 0.4s;
   }
 
-  .menu a {
-    color: rgb(37,65,70);
+  .menu-white {
+    background-color: #fff;
+  }
+
+  .menu-a {
+    color: #fff;
     font-size: 1rem;
     letter-spacing: 2px;
     margin: 0 0 0 20px;
   }
 
-  .menu a .yellow-span {
+  .menu-a-green {
+    color: rgba(37,65,70,1);
+  }
+
+  .menu-a .yellow-span {
+    display: none;
+  }
+
+  .laptop-logo {
+    display: block;
+    position: fixed;
+    width: 140px;
+    z-index: 55;
+    top: 16px;
+    left: 30px;
+  }
+
+  .laptop-logo img:nth-child(2) {
     display: none;
   }
 

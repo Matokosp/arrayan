@@ -76,7 +76,8 @@ $(infoHide).on('click', function(){
 });
 
 
-
+const sectionOne = $('#sectionOne').offset();
+const sectionTwo = $('#sectionTwo').offset();
 
 // DESKTOPS
 
@@ -94,6 +95,26 @@ $(infoHide).on('click', function(){
       $('.staff-item').on('mouseleave', function(){
         $(this).children('.staff-item-info').removeClass('staff-info-show');
       })
+
+
+      var windowHeight = $( window ).height();
+      var position = $(window).scrollTop();
+      // SCROLL UP & DOWN
+
+      
+      $(window).scroll(function() {
+        if ($(window).scrollTop() >= sectionTwo.top - 150) {
+          $('.menu').addClass('menu-white');
+          $('.menu').children('a').addClass('menu-a-green');
+          $('.laptop-logo img:nth-child(1)').css('display', 'none');
+          $('.laptop-logo img:nth-child(2)').css('display', 'block');
+        } else {
+          $('.menu').removeClass('menu-white');
+          $('.menu').children('a').removeClass('menu-a-green');
+          $('.laptop-logo img:nth-child(1)').css('display', 'block');
+          $('.laptop-logo img:nth-child(2)').css('display', 'none');
+        }
+      });
        
 	  }
 	}

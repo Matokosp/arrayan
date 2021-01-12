@@ -67,8 +67,9 @@ section {
 .hero h2 {
     color: #fff;
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: 2.6rem;
     margin: 18px 0 0 0;
+    font-size: 2.4rem;
 }
 
 /* SECTION TWO */
@@ -96,7 +97,7 @@ section {
 /* SECTION THREE */
 
 .section-three {
-    background-image: url(../images/section-three-bkg.jpg);
+    /* background-image: url(../images/section-three-bkg.jpg); */
     color: #fff;
     padding: 50px 10vw;
 }
@@ -136,7 +137,7 @@ section {
 
 .staff-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
@@ -145,6 +146,7 @@ section {
 .staff-item {
     width: 100%;
     position: relative;
+    margin: 10px 0;
 }
 
 .staff-item-bott {
@@ -189,7 +191,7 @@ section {
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 20px 10% 30px 10%;
     justify-content: center;
     align-content: center;
     /* background-blend-mode: multiply; */
@@ -208,6 +210,10 @@ section {
     font-size: 0.9rem;
 }
 
+.staff-item-info p {
+    overflow-y: scroll;
+}
+
 .staff-item-info-corner {
     position: absolute;
     right: 6px;
@@ -223,7 +229,7 @@ section {
 /* SECTION FIVE */
 
 .section-five {
-    background-image: url('../images/section-three-bkg.jpg');
+    /* background-image: url('../images/section-three-bkg.jpg'); */
     color: #fff;
     padding: 50px 10vw;
 }

@@ -77,6 +77,7 @@
     /* SECTION FOUR */
 
     .staff-container {
+        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -187,6 +188,10 @@
 
     .staff-item-info-corner span {
         display: none;
+    }
+
+    .staff-item-info p {
+        font-size: 0.9rem;
     }
 
     /* SECTION FIVE */
