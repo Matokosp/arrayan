@@ -242,17 +242,25 @@
                 <span class="yellow-span"></span>
                 <h2>Pongámonos en contacto</h2>
             </div>
-            <form action="">
+            <form action="contactForm.php" method="POST" onSubmit="return validateForm(event)" >
+                 <div class="errors">
+                        <div id= "nameError"></div>
+                        <div id= "mailError"></div>
+                        <div id= "asuntoError"></div></div>
                 <div class="inputs">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Asunto">
+                    <input name= "formName" id="formName" type="text" placeholder="Nombre">
+                    <input name= "formMail" id ="formMail" type="text" placeholder="Email">
+                    <input name= "formAsunto" id = "formAsunto" type="text" placeholder="Asunto">
                 </div>                
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar">
+                <div id= "mensajeError"></div>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input  type="submit" value="Enviar">
             </form>
         </div>
     </section>
+
+
+
     <footer>
         <img src="assets/images/arrayan-logo.png" alt="">
         <div>
@@ -270,3 +278,4 @@
     
 </body>
 </html>
+
